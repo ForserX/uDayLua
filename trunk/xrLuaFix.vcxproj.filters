@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Libs">
+      <UniqueIdentifier>{6c3e07bb-e235-42ff-86a5-e8140d910a93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="exports">
+      <UniqueIdentifier>{05fdc339-cebf-4af6-bb83-0149e6a5e6fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LuaOrig">
+      <UniqueIdentifier>{69f8b282-9889-46c5-8106-8f5bc8ae3194}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\lfs">
+      <UniqueIdentifier>{3e86f000-8713-4ff4-83e7-dd44e556e7ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\Math">
+      <UniqueIdentifier>{b6b3cce3-738d-4cf5-8a9e-2d69ed03a546}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\tables">
+      <UniqueIdentifier>{aec7d372-82cf-41d4-a0c4-0cfdb9ff0a0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\strings">
+      <UniqueIdentifier>{78d517b4-b7c3-4f5a-901b-7cf1dc95f6ba}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="base.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lfs\lfs.c">
+      <Filter>Libs\lfs</Filter>
+    </ClCompile>
+    <ClCompile Include="LibMath.cpp">
+      <Filter>Libs\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="LibTab.cpp">
+      <Filter>Libs\tables</Filter>
+    </ClCompile>
+    <ClCompile Include="LibStr.cpp">
+      <Filter>Libs\strings</Filter>
+    </ClCompile>
+    <ClCompile Include="LibLpack.c">
+      <Filter>Libs\strings</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="export45.h">
+      <Filter>exports</Filter>
+    </ClInclude>
+    <ClInclude Include="export036.h">
+      <Filter>exports</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs.h">
+      <Filter>Libs</Filter>
+    </ClInclude>
+    <ClInclude Include="lua\lapi.h">
+      <Filter>LuaOrig</Filter>
+    </ClInclude>
+    <ClInclude Include="lua\lauxlib.h">
+      <Filter>LuaOrig</Filter>
+    </ClInclude>
+    <ClInclude Include="lua\llimits.h">
+      <Filter>LuaOrig</Filter>
+    </ClInclude>
+    <ClInclude Include="lua\lobject.h">
+      <Filter>LuaOrig</Filter>
+    </ClInclude>
+    <ClInclude Include="lua\lstate.h">
+      <Filter>LuaOrig</Filter>
+    </ClInclude>
+    <ClInclude Include="lua\lua.h">
+      <Filter>LuaOrig</Filter>
+    </ClInclude>
+    <ClInclude Include="lua\lua.hpp">
+      <Filter>LuaOrig</Filter>
+    </ClInclude>
+    <ClInclude Include="lua\luaconf.h">
+      <Filter>LuaOrig</Filter>
+    </ClInclude>
+    <ClInclude Include="lua\lualib.h">
+      <Filter>LuaOrig</Filter>
+    </ClInclude>
+    <ClInclude Include="lfs\lfs.h">
+      <Filter>Libs\lfs</Filter>
+    </ClInclude>
+    <ClInclude Include="LibMath.h">
+      <Filter>Libs\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="LibTab.h">
+      <Filter>Libs\tables</Filter>
+    </ClInclude>
+    <ClInclude Include="LibStr.h">
+      <Filter>Libs\strings</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
