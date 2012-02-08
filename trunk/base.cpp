@@ -11,6 +11,7 @@
 #include <ctime>
 
 #pragma comment(lib, "xrCore")
+#pragma comment(lib, "user32") 
 
 std::ofstream LogFile;
 
