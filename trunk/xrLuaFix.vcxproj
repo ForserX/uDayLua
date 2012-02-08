@@ -88,8 +88,7 @@
     <ClCompile Include="LibLpack.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="export036.h" />
-    <ClInclude Include="export45.h" />
+    <ClInclude Include="export.h" />
     <ClInclude Include="lfs\lfs.h" />
     <ClInclude Include="LibMath.h" />
     <ClInclude Include="Libs.h" />

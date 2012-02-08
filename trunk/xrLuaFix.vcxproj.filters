@@ -48,12 +48,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="export45.h">
-      <Filter>exports</Filter>
-    </ClInclude>
-    <ClInclude Include="export036.h">
-      <Filter>exports</Filter>
-    </ClInclude>
     <ClInclude Include="Libs.h">
       <Filter>Libs</Filter>
     </ClInclude>
@@ -95,6 +89,9 @@
     </ClInclude>
     <ClInclude Include="LibStr.h">
       <Filter>Libs\strings</Filter>
+    </ClInclude>
+    <ClInclude Include="export.h">
+      <Filter>exports</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
