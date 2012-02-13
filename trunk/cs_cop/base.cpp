@@ -6,6 +6,5 @@ extern "C" __declspec(dllexport) int luaopen_rvp(lua_State *L){
 	/*
 	do something
 	*/
-	lua_pushboolean(L, 1);
 	return 0;
 }
