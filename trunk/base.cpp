@@ -4,14 +4,15 @@
 
 #include "export.h"
 
-
 #include <Windows.h>
 #include <fstream>
 #include <ctime>
+#include <process.h>
 
 #pragma comment(lib, "xrCore")
 #pragma comment(lib, "user32") 
 
+/*****/
 std::ofstream LogFile;
 
 char fmt[64];
@@ -55,13 +56,41 @@ int log123(lua_State *L){
 	}
 	return 0;
 }
+/*****/
+int arr[256];
 
-int GetKey(lua_State *L){
-	lua_pushboolean(L, GetKeyState(luaL_checkint(L, 1)) & 0x8000);
+int GetKB(lua_State *L){
+	lua_newtable(L);
+	for(int i=0; i<256; ++i){
+		lua_pushinteger(L, i);
+		lua_pushboolean(L, arr[i]);
+		lua_settable(L, -3);
+	}
 	return 1;
 }
 
+void upd(void *arg){
+	while(1){
+		for(int i=0; i<256; ++i){
+			arr[i] = GetKeyState(i) & 0x8000;
+		}
+		Sleep(25);
+	}
+}
+
+bool thread = true;
+
+void kb_start(){
+	if(thread){
+		memset(&arr[0], 0, 256);
+		_beginthread(upd, 0, 0);
+	}
+	thread = false;
+}
+/*****/
+
 int open(lua_State *L){
+	kb_start();
 	luaopen_os(L);
 	luaopen_io(L);
 	luaopen_package(L);
@@ -72,7 +101,7 @@ int open(lua_State *L){
 	luaopen_lfs(L);
 	lua_register(L, "SetLog", SetLog);
 	lua_register(L, "log123", log123);
-	lua_register(L, "GetKey", GetKey);
+	lua_register(L, "GetKB",  GetKB);
 	return 0;
 }
 
