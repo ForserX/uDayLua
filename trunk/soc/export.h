@@ -67,7 +67,6 @@
 #pragma comment(linker, "/export:??1proxy_raw_object@detail@luabind@@QAE@XZ=xrLua_GSC.??1proxy_raw_object@detail@luabind@@QAE@XZ")
 #pragma comment(linker, "/export:??4proxy_array_object@detail@luabind@@QAEAAV012@ABVproxy_object@12@@Z=xrLua_GSC.??4proxy_array_object@detail@luabind@@QAEAAV012@ABVproxy_object@12@@Z")
 #pragma comment(linker, "/export:??8overload_rep@detail@luabind@@QAE_NABU012@@Z=xrLua_GSC.??8overload_rep@detail@luabind@@QAE_NABU012@@Z")
-#pragma comment(linker, "/export:luaL_openlibs=xrLua_GSC.luaL_openlibs")
 #pragma comment(linker, "/export:luaL_checkany=xrLua_GSC.luaL_checkany")
 #pragma comment(linker, "/export:?get_class_name@detail@luabind@@YA?AV?$basic_string@DV?$char_traits@D@stlp_std@@V?$xalloc@D@@@stlp_std@@PAUlua_State@@PBVtype_info@@@Z=xrLua_GSC.?get_class_name@detail@luabind@@YA?AV?$basic_string@DV?$char_traits@D@stlp_std@@V?$xalloc@D@@@stlp_std@@PAUlua_State@@PBVtype_info@@@Z")
 #pragma comment(linker, "/export:?const_holder_destructor@class_rep@detail@luabind@@QBEP6AXPAX@ZXZ=xrLua_GSC.?const_holder_destructor@class_rep@detail@luabind@@QBEP6AXPAX@ZXZ")

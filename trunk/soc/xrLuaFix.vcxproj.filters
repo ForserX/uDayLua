@@ -26,6 +26,12 @@
     <Filter Include="Libs\strings">
       <UniqueIdentifier>{78d517b4-b7c3-4f5a-901b-7cf1dc95f6ba}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Libs\KeyBoard">
+      <UniqueIdentifier>{1e2d697a-42c6-4d5a-b286-cd0891efee8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\Logger">
+      <UniqueIdentifier>{3db09556-25dd-4a97-82b6-ff3aaf0f6477}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="base.cpp">
@@ -45,6 +51,12 @@
     </ClCompile>
     <ClCompile Include="LibLpack.c">
       <Filter>Libs\strings</Filter>
+    </ClCompile>
+    <ClCompile Include="keyboard.cpp">
+      <Filter>Libs\KeyBoard</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger.cpp">
+      <Filter>Libs\Logger</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -92,6 +104,12 @@
     </ClInclude>
     <ClInclude Include="export.h">
       <Filter>exports</Filter>
+    </ClInclude>
+    <ClInclude Include="keyboard.h">
+      <Filter>Libs\KeyBoard</Filter>
+    </ClInclude>
+    <ClInclude Include="logger.h">
+      <Filter>Libs\Logger</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

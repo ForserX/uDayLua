@@ -1,12 +1,9 @@
 #include "LibMath.h"
 
-#include <boost/random/uniform_01.hpp>
-#include <boost/random/uniform_int.hpp>
-#include <boost/random/mersenne_twister.hpp>
-#include <boost/random/lagged_fibonacci.hpp>
-#include <boost/random/random_device.hpp>
+#include <boost/random.hpp>
+#include <random>
 
-boost::random_device ndrng;
+std::random_device ndrng;
 boost::mt19937 intgen;
 boost::uniform_01<boost::mt19937> float_random_01(intgen);
 
@@ -15,8 +12,7 @@ int gen_random_in_range(int a1, int a2){
     return dist(intgen);
 } 
 
-int math_randomseed(lua_State *L)
-{
+int math_randomseed(lua_State *L){
 	switch (lua_gettop(L)){
 		case 0:{
 			intgen.seed(ndrng());

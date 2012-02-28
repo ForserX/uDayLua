@@ -81,19 +81,23 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="base.cpp" />
+    <ClCompile Include="keyboard.cpp" />
     <ClCompile Include="lfs\lfs.c" />
     <ClCompile Include="LibMath.cpp" />
     <ClCompile Include="LibStr.cpp" />
     <ClCompile Include="LibTab.cpp" />
     <ClCompile Include="LibLpack.c" />
+    <ClCompile Include="Logger.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="export.h" />
+    <ClInclude Include="keyboard.h" />
     <ClInclude Include="lfs\lfs.h" />
     <ClInclude Include="LibMath.h" />
     <ClInclude Include="Libs.h" />
     <ClInclude Include="LibStr.h" />
     <ClInclude Include="LibTab.h" />
+    <ClInclude Include="logger.h" />
     <ClInclude Include="lua\lapi.h" />
     <ClInclude Include="lua\lauxlib.h" />
     <ClInclude Include="lua\llimits.h" />
