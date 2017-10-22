@@ -1,10 +1,17 @@
-#include <lua.hpp>
+extern "C"
+{
+#	include <lua.h>
+#	include <lualib.h>
+#	include <lauxlib.h>
+}
 
-#pragma comment(lib, "lua.JIT.1.1.4.lib")
+extern "C"
+{
+	extern luaL_Reg strlib[];
+}
 
-extern "C" __declspec(dllexport) int luaopen_rvp(lua_State *L){
-	/*
-	do something
-	*/
+extern "C" __declspec(dllexport) int luaopen_uday(lua_State *L)
+{
+	luaL_openlib(L, "uDay", strlib, 0);
 	return 0;
 }
