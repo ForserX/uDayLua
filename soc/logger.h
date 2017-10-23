@@ -1,5 +1,5 @@
 #include <lua.hpp>
-#include "xrCore.h"
+#include "../3rd-party/includes/xrCore.h"
 
 #include <fstream>
 #include <ctime>
