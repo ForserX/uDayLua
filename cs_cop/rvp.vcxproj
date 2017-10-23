@@ -79,6 +79,7 @@
   <ItemGroup>
     <ClCompile Include="base.cpp" />
     <ClCompile Include="Bit.cpp" />
+    <ClCompile Include="Logger.cpp" />
     <ClCompile Include="uDay.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

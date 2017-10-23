@@ -10,7 +10,8 @@ int isInit(lua_State* l)
 }
 
 
-luaL_Reg strlib[] = {
+luaL_Reg strlib[] = 
+{
 	{ "isWork", isInit },
 	{ NULL, NULL }
 };

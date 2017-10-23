@@ -1,2 +1,7 @@
 /intermediante/
 cs_cop/.vs/
+/binaries/*.exp
+/binaries/*.iobj
+/binaries/*.ipdb
+/binaries/*.lib
+/binaries/*.pdb
