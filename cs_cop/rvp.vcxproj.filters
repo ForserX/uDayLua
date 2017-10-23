@@ -17,5 +17,8 @@
     <ClCompile Include="uDay.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Bit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
